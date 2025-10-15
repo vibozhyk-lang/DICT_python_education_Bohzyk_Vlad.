@@ -16,4 +16,17 @@ i = 0
 while i <= numbers :
     print(f'{i}!')
     i += 1
-print("Complected, have a nice day!")
+print("Let`s test you programming!", "\nWhy do we use methods?",'\n1. To repeat a statement multiple times','\n2. To decompose a program into several small subroutines','\n3. To determine the execution time of a program','\n4. To interrupt the execution of a program')
+while True:
+    try:
+        a = int(input())
+    except ValueError:
+        print("Invalid input. Please enter a number from 1 to 4.")
+        continue
+
+    if a == 2:
+        print('Completed, have a nice day!')
+        break
+    else:
+        print("Please, try again.")
+print("Congratulations, have a nice day!")
